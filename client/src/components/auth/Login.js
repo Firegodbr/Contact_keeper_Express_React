@@ -16,10 +16,6 @@ const Login = props => {
             setAlert(error, "danger");
             clearErrors();
         }
-        if (error !== null) {
-            setAlert(error, "danger");
-            clearErrors();
-        }
         //eslint-disable-next-line
     }, [error, isAuthenticated, props.history]);
 
